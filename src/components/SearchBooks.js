@@ -15,8 +15,7 @@ class SearchBooks extends Component {
          <div className="search-books-bar">
             <Link to="/" className="close-search" >Close</Link>
             <div className="search-books-input-wrapper">
-                <input type="text" onChange={searchFunc} placeholder="Search by title or author"/>
-                <Dropdown fluid selection options={searchOptions} placeholder="Pick a search term" />
+                <Dropdown fluid selection options={searchOptions} placeholder="Pick a search term" onChange={searchFunc} />
             </div>
           </div>
           <BookShelf title="" filter="" books={books} onUpdateShelf={this.props.onUpdateShelf}/>
