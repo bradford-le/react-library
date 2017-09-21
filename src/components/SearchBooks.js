@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import BookShelf from './BookShelf';
 import { Link } from 'react-router-dom';
-import { BookShelf } from './BookShelf';
 
 class SearchBooks extends Component {
- 
+
   render() {
     
     const {searchFunc, books} = this.props;
@@ -16,7 +16,7 @@ class SearchBooks extends Component {
                 <input type="text" onChange={searchFunc} placeholder="Search by title or author"/>
             </div>
           </div>
-          <BookShelf title="" filter="" books={books} onUpdateShelf={this.props.onUpdateShelf} />
+          <BookShelf title="" filter="" books={books} onUpdateShelf={this.props.onUpdateShelf}/>
       </div>
         )
     }

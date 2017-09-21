@@ -3,6 +3,7 @@ import * as BooksAPI from './BooksAPI';
 import './App.css';
 import { Route } from 'react-router-dom';
 import ListBooks from './components/ListBooks';
+import SearchBooks from './components/SearchBooks';
 
 class App extends Component {
   
@@ -29,6 +30,9 @@ class App extends Component {
       <div className="app">
         <Route exact path="/" render={()=>(
           <ListBooks books={this.state.books} onUpdateShelf={this.updateShelf} clearSearch={this.clearSearch} />
+        )}/>
+        <Route exact path="/search" render={()=>(
+          <SearchBooks  />
         )}/>
       </div>
     );
