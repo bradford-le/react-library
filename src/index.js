@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom' //For routing in URL address bar
+import 'semantic-ui-css/semantic.min.css';
 
 ReactDOM.render(
 <BrowserRouter><App /></BrowserRouter>, 

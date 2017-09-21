@@ -22,7 +22,7 @@ export default class App extends Component {
     
     let query = event.target.value;
     if(query) {
-      BooksAPI.search(query,20).then( (searchedBooks) => {
+      BooksAPI.search(query,5).then( (searchedBooks) => {
             this.setState({searchedBooks});
       })
     } else {
