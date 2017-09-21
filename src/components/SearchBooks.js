@@ -2,17 +2,13 @@ import React, {Component} from 'react';
 import BookShelf from './BookShelf';
 import { Link } from 'react-router-dom';
 import {Dropdown} from 'semantic-ui-react';
+import { searchOptions } from '../constants';
 
 class SearchBooks extends Component {
 
   render() {
-    const options = [
-      {
-        text: "Android"
-      }
-    ]
+
     const {searchFunc, books} = this.props;
-    const defaultOption = options[0];
 
     return (
       <div className="search-books">
@@ -20,7 +16,7 @@ class SearchBooks extends Component {
             <Link to="/" className="close-search" >Close</Link>
             <div className="search-books-input-wrapper">
                 <input type="text" onChange={searchFunc} placeholder="Search by title or author"/>
-                <Dropdown fluid selection options={options} placeholder="Pick a search term" />
+                <Dropdown fluid selection options={searchOptions} placeholder="Pick a search term" />
             </div>
           </div>
           <BookShelf title="" filter="" books={books} onUpdateShelf={this.props.onUpdateShelf}/>
