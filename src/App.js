@@ -19,7 +19,7 @@ export default class App extends Component {
   }
 
   searchBooks = (event) => {
-    
+    console.log(event.target.value);
     let query = event.target.value;
     if(query) {
       BooksAPI.search(query,5).then( (searchedBooks) => {

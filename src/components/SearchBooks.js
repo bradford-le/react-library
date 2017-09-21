@@ -14,7 +14,7 @@ class SearchBooks extends Component {
       <div className="search-books">
          <div className="search-books-bar">
             <Link to="/">
-              <Button icon='left arrow' labelPosition='left' content='Back' />
+              <Button color='blue' icon='left arrow' labelPosition='left' content='Back' />
             </Link>
             <div className="search-books-input-wrapper">
                 <Dropdown fluid search selection options={searchOptions} placeholder="Pick a search term" onChange={searchFunc} />
