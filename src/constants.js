@@ -10,7 +10,7 @@ export const searchOptions = [
   {key: "Biography", value: "Biography", text: "Biography"},
   {key: "Brief", value: "Brief", text: "Brief"},
   {key: "Business", value: "Business", text: "Business"},
-  {key: "'Camus", value: "'Camus", text: "'Camus"},
+  {key: "Camus", value: "Camus", text: "Camus"},
   {key: "Cervantes", value: "Cervantes", text: "Cervantes"},
   {key: "Christie", value: "Christie", text: "Christie"},
   {key: "Classics", value: "Classics", text: "Classics"},

@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
 
-class BookShelf extends Component {
+export default class BookShelf extends Component {
 
     state = {
         book: ''
     }
 
     onShelfChange = ( (book, event) => {
-       book.shelf = event.target.value;
-       this.props.onUpdateShelf(book, event.target.value);
+        console.log(event.target.value);
+        book.shelf = event.target.value;
+        this.props.onUpdateShelf(book, event.target.value);
      });
 
     render() {
@@ -53,5 +54,3 @@ class BookShelf extends Component {
     }
 
 }
-
-export default BookShelf;

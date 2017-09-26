@@ -3,7 +3,7 @@ import BookShelf from './BookShelf';
 import { Link } from 'react-router-dom';
 
 
-class ListBooks extends Component {
+export default class ListBooks extends Component {
   
       render() {
           const {onUpdateShelf, books} = this.props;
@@ -28,5 +28,3 @@ class ListBooks extends Component {
           )
       }
   }
-
-  export default ListBooks;

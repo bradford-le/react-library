@@ -18,11 +18,11 @@ export default class App extends Component {
     })
   }
 
-  searchBooks = (event) => {
-    console.log(event.target.value);
-    let query = event.target.value;
+  searchBooks = (event,value) => {
+    console.log(value.value);
+    let query =value.value;
     if(query) {
-      BooksAPI.search(query,5).then( (searchedBooks) => {
+      BooksAPI.search(query,20).then( (searchedBooks) => {
             this.setState({searchedBooks});
       })
     } else {
